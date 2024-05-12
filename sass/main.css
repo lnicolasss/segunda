@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+.logo img {
+  width: 250px;
+  float: left;
+  padding: 8px;
+}
+
+.menu {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table;
+  background-color: #2f0069;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 40px;
+  padding: 25px 0;
+  float: left;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c7ae6a;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+
+.contenedor img {
+  width: 250px;
+  height: 100%;
+}
+
+.tarjeta {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.tarjeta-texto {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.titulo {
+  font-size: 1, 5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  margin-bottom: 20px;
+}
+
+.bt {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  background-color: #2f0069;
+  padding: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #c7ae6a;
+}
+
+.equipomorgan {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.equipomorgan img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-md-6 p {
+  font-family: "Arial", sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #2f0069;
+}
+
+.footer img {
+  width: 20px;
+}
+
+.footer p {
+  color: #c7ae6a;
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .bt {
+    width: 100%;
+  }
+  .contenedor img {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .menu {
+    width: auto;
+    padding: 0 10px;
+  }
+  .logo img {
+    width: 150px;
+  }
+  nav ul {
+    float: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .horologia img {
+    max-width: 250px;
+  }
+  .equipomorgan {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=main.css.map */

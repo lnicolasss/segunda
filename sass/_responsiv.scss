@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px){
+    .contenedor{
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    }
+    .bt{
+        width: 100%;
+    }
+
+    .contenedor img{
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .menu {
+        width: auto;
+        padding: 0 10px; 
+    }
+    
+    .logo img {
+        width: 150px; 
+    }
+
+    nav ul {
+        float: none;
+        text-align: center; 
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .horologia img {
+        max-width: 250px; 
+    }
+    .equipomorgan {
+        padding: 0 10px;
+    }
+
+}
