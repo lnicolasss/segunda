@@ -1,45 +1,114 @@
-@media screen and (max-width: 600px){
-    .contenedor{
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    }
-    .bt{
-        width: 100%;
-    }
-
-    .contenedor img{
-        width: 100%;
-    }
-
-    
-}
-
-@media (max-width: 600px) {
+@media screen and (min-width: 900px) {
     .menu {
-        width: auto;
-        padding: 0 10px; 
-    }
-    
-    .logo img {
-        width: 150px; 
+        width: 900px;
     }
 
-    nav ul {
-        float: none;
-        text-align: center; 
+    .footer img {
+        width: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 250px;
     }
 
     nav ul li {
-        display: inline-block;
-        margin: 0 10px; 
+        margin-left: 40px;
+        padding: 25px 0;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: 20px auto;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+    }
+
+    .contenedor img {
+        width: 250px;
+        height: 100%;
+    }
+
+    .tarjeta-texto {
+        padding: 40px 20px;
+    }
+
+    .bt {
+        width: 250px;
     }
 }
 
-@media (max-width: 600px) {
-    .horologia img {
-        max-width: 250px; 
-    }
-    .equipomorgan {
-        padding: 0 10px;
+/* Estilos para tablet */
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .menu {
+        width: 80%;
     }
 
+    .logo img {
+        width: 200px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+        padding: 20px 0;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: 20px auto;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    .contenedor img {
+        width: 100%;
+    }
+
+    .tarjeta-texto {
+        padding: 20px;
+    }
+
+    .bt {
+        width: 200px;
+    }
+}
+
+/* Estilos para celular */
+
+@media screen and (max-width: 599px) {
+    .menu {
+        width: 90%;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        padding: 15px 0;
+    }
+
+    .contenedor {
+        width: 90%;
+        margin: 20px auto;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contenedor img {
+        width: 100%;
+    }
+
+    .tarjeta-texto {
+        padding: 10px;
+    }
+
+    .bt {
+        width: 150px;
+    }
 }
