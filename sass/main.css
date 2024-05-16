@@ -267,7 +267,7 @@ input[type=submit]:hover {
     width: 250px;
   }
 }
-/* Estilos para tablet */
+/* tablet */
 @media screen and (min-width: 600px) and (max-width: 899px) {
   .menu {
     width: 80%;
@@ -295,7 +295,7 @@ input[type=submit]:hover {
     width: 200px;
   }
 }
-/* Estilos para celular */
+/* celular */
 @media screen and (max-width: 599px) {
   .menu {
     width: 90%;
