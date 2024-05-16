@@ -4,25 +4,31 @@
     width: 90%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     gap: 30px;
 
-}
+    img {
+        width: 250px;
+        height: 100%;
+    }
 
-.contenedor img {
-    width: 250px;
-    height: 100%;
-}
-
-.tarjeta {
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-    border-radius: 10px;
-}
-
-.tarjeta-texto {
-    width: 100%;
-    padding: 40px 20px;
+    .tarjeta {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        .tarjeta-texto {
+            width: 100%;
+            padding: 40px 20px;
+            .titulo {
+                font-size: 1.5rem;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .descripcion {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 .titulo {
@@ -35,7 +41,9 @@
     margin-bottom: 20px;
 }
 
-.bt {
+// mixin
+
+@mixin button-style {
     display: block;
     width: 250px;
     margin: 0 auto;
@@ -45,11 +53,16 @@
     text-align: center;
     text-decoration: none;
     color: white;
+
+    &:hover {
+        background-color: $dorado-claro;
+        transition: background-color 0.3s ease;
+    }
 }
 
-.bt:hover {
-    background-color: $dorado-claro;
-    transition: background-color 0.3s ease;
+
+.bt {
+    @include button-style;
 }
 
 // nosotros 

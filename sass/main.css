@@ -57,20 +57,25 @@ nav ul li a:hover {
   grid-template-rows: 1fr;
   gap: 30px;
 }
-
 .contenedor img {
   width: 250px;
   height: 100%;
 }
-
-.tarjeta {
+.contenedor .tarjeta {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
-
-.tarjeta-texto {
+.contenedor .tarjeta .tarjeta-texto {
   width: 100%;
   padding: 40px 20px;
+}
+.contenedor .tarjeta .tarjeta-texto .titulo {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contenedor .tarjeta .tarjeta-texto .descripcion {
+  margin-bottom: 20px;
 }
 
 .titulo {
@@ -94,7 +99,6 @@ nav ul li a:hover {
   text-decoration: none;
   color: white;
 }
-
 .bt:hover {
   background-color: #c7ae6a;
   transition: background-color 0.3s ease;
